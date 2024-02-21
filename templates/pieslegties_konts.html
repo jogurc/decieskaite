@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="utf-8">
+          <title>Pieslēgšanās</title>
+     </head>
+     <body>
+          <h1>Pieslēgšanās</h1>
+        <a href="/"><button type = "button">Atpakaļ</button></a><br>
+          <form action="{{url_for('konts_pieslegties')}}" method = "POST">
+            <label for ="lietotajvards">Lietotājvārds:</label>
+            <input type="text" id="lietotajvards" name="lietotajvards"><br>
+            <label for="parole">Parole:</label>
+            <input type="text" id="parole" name="parole"><br>
+            <input type="submit" value="Pieslēgties" name="submit">
+            </form>
+     </body>
+</html>

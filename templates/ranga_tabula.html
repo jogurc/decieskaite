@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="utf-8">
+          <title>Ranga tabula</title>
+     </head>
+     <body>
+       <h1>Ranga tabula</h1>
+       <table>
+         <tr>
+           <td><h5>Lietotājvārds</h5></td>
+           <td><h5>Līmenis</h5></td>
+           <td><h5>Kaujas punkti</h5></td>
+           <td><h5>Izspēlētās spēles</h5></td>
+         </tr>
+         {% for kont in sakartot %}
+         <tr>
+           <td>{{kont[0]}}</td>
+           <td>{{kont[1]}}</td>
+           <td>{{kont[2]}}</td>
+           <td>{{kont[3]}}</td>
+         </tr>
+         {% endfor %}
+       </table>
+       <br><a href="/"><button type = "button">Atpakaļ</button></a>
+     </body>
+</html>

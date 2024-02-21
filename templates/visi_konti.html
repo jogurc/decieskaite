@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="utf-8">
+          <title>Visi Konti</title>
+     </head>
+     <body>
+       <table>
+         <tr>
+           <td><h5>Id</h5></td>
+           <td><h5>Lietotājvārds</h5></td>
+           <td><h5>Parole</h5></td>
+         </tr>
+         {% for kont in rezultats %}
+         <tr>
+           <td>{{kont[0]}}</td>
+           <td>{{kont[1]}}</td>
+           <td>{{kont[2]}}</td>
+         </tr>
+         {% endfor %}
+       </table>
+       <br><a href="/"><button type = "button">Atpakaļ</button></a>
+     </body>
+</html>

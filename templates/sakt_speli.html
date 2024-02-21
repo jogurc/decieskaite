@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="utf-8">
+          <title>Profils</title>
+     </head>
+     <body>
+       <h1>PROFILS</h1>
+        <table>
+          <tr>
+            <td><h5>Lietotājvārds</h5></td>
+            <td><h5>Līmenis</h5></td>
+            <td><h5>Pieredze</h5></td>
+          </tr>
+          {% for kont in rezultats %}
+          <tr>
+            <td>{{kont[0]}}</td>
+            <td>{{kont[1]}}</td>
+            <td>{{kont[2]}}</td>
+          </tr>
+          {% endfor %}
+        </table>
+       Lai sasniegtu nākamo līmeni vajag: {{ xp }} pieredzes punktus.
+       <br><a href="/izvele"><button type = "button">Sākt spēli</button></a><br>
+       <a href="/konts_pieslegties"><button type = "button">Atpakaļ</button></a>
+
+     </body>
+</html>
